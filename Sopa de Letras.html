@@ -1285,13 +1285,13 @@ var GameWidgetHelper = {
             x++;
         });
 
-        //var words = "<div id='rf-wordcontainer'><ul>"
-        //$(model.wordList.words).each(function () {
-        //    words += '<li class=rf-p' + this.isPlaced + '>' + this.originalValue + '</li>';
-        //});
-        //words += "</ul></div>";
+        var words = "<div id='rf-wordcontainer'><ul>"
+        $(model.wordList.words).each(function () {
+          words += '<li class=rf-p' + this.isPlaced + '>' + this.originalValue + '</li>';
+        });
+        words += "</ul></div>";
 
-        //$(container).append(words);
+        $(container).append(words);
 
 
         },
@@ -1327,8 +1327,8 @@ var GameWidgetHelper = {
             //attach the game to a div
             $("#theGrid").wordsearchwidget({
                 "wordlist": words,
-                "gridsize": 12,
-                "width": 300
+                "gridsize": 20,
+                "width": 500
             });
 
         });
